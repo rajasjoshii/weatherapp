@@ -30,14 +30,14 @@ app.post('/', function (req, res) {
       const hum = data.current.humidity;
       const cloud = data.current.cloudcover;
       const desc = data.current.weather_descriptions[0];
-      const icon = data.current.weather_icons[0];
+      
 
 
       res.write(`<h1>${temp} Celsius</h1>`,);
       res.write(`<h3>${desc}</h3>`);
-      res.write(`<h3>Percipitation : ${percp}</h3>`)
-      res.write(`<h3>Humidity : ${hum}</h3>`)
-      res.write(`<h3>Cloudiness : ${cloud}</h3>`)
+      res.write(`<h3>Percipitation : ${percp}</h3>`);
+      res.write(`<h3>Humidity : ${hum}</h3>`);
+      res.write(`<h3>Cloudiness : ${cloud}</h3>`);
 
       res.send();
     }
