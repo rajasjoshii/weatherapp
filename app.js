@@ -17,7 +17,7 @@ app.get('/', function (req, res) {
 app.post('/', function (req, res) {
 
   let params = req.body.CityName;
-  const key = 'd848c19468d45f8c524346da22112117';
+  const key = '078aa00f8f1fec8b80b2e3c32d03c019';
 
   const url = `http://api.weatherstack.com/current?access_key=${key}&query=${params}`;
 
